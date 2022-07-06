@@ -1,49 +1,60 @@
 # KfW DevOps Challenge
 
-## Challenge 0 - Setup
+## Challenge 1 - Agile (Organize & Project Management)
 
-[Home](../../README.md) - [Next >](../challenge01/README.md)
+[Home](../../README.md) - [Next >](../challenge02/README.md)
 
 ### Intro
 
->Herzlich Willkommen in der Underground-Community! Damit du bei uns losstarten kannst, brauchst du ein paar Werkzeuge, die wir >dir auf dem Weg mitgeben. Bitte installier die notwendigen Tools bevor du weiter machst, die Geschichte liegt in euren >Händen!
+>Du lernst dein Team kennen und müsst euch nun organisieren. Ihr braucht eine Plattform der euch erlaubt schnell auf >Änderungen zu reagieren und ein robustes System um euch unter einander auszutauschen ... 
 
-DevOps ist ein Konzept, das Menschen, Prozesse und Tools umfasst. Die verwendeten Tools fallen in eine Reihe von Kategorien, wie Versionskontrolle, kontinuierliche Integration und kontinuierliche Bereitstellung (CI/CD), Infrastructure-as-Code und Sicherheitsscans. Innerhalb jeder Kategorie hast du viele Möglichkeiten, wenn es um die Implementierung geht. In dieser Herausforderung wirst du deine lokale Maschine und deine Cloud-Umgebung mit den Mindestanforderungen einrichten, aber die folgenden Lektionen lassen sich auf jede DevOps-Praxis übertragen, unabhängig von der Art der Tools. 
+Agiles Projektmanagement ist eine Schlüsselkomponente beim Aufbau einer modernen DevOps-Kultur in einem Unternehmen. Wenn ihr neu im Bereich Agile sind oder nur euer Wissen auffrischen wollt, empfehlen wir euch folgende Artikel:
+
+- [What is Agile?](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile)
+- [What is Scrum](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-scrum)
+- [What is Kanban](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-kanban)
+- [What is Agile Development?](https://docs.microsoft.com/en-us/azure/devops/learn/agile/what-is-agile-development)
+
+Um euch beim agilen Projektmanagement zu unterstützen, gibt es GitHub-Projektboards. Mit GitHub Project Boards könnt ihr schnell und einfach damit beginnen, euer Backlog, eure Aufgaben, Probleme/Fehler und Funktionen im Zusammenhang mit euren Projekt zu verfolgen.
 
 ### Tasks
 
-1. Erstelle einen [GitHub](https://github.com/) Account den du für die folgenden Aufgaben benutzt. Falls du schon einen GitHub Account hast, kannst du diesen natürlich gerne nutzen.
+1. (Einer von eurem Team) Erstellt eine neue (free) Organisation in Github mit eurem Teamnamen und ladet eure Teammitglieder in die neu erstellte Organisation ein.
 
-2. Du solltest eine Einladung zu einer Azure Subscription `KFW-Challenge` erhalten haben, bitte nimm diese an wenn noch nicht getan. Azure ist die Microsoft Public Cloud, die wir uns heute zu nutzen machen werden.
+2. Erstellt in eurer neu erstellten Organisation ein privates Repository, dass ihr für den Hackathon verwenden werdet. (Bei den Initialisierungs Optionen könnt ihr alles leer lassen)
+
+3. Jeder von euch erstellt ein "Issue" "Challenge 1 - <dein Benutzername>" für diese Herausforderung. Wenn ihr ein "Issue" erstellt, stellt sicher, dass ihr:
+    - Jemand Verantwortlichen zuweist. Weise deine Aufgabe "Herausforderung 1" einem anderen Mitglied deines Teams zu und lass dir ihre/seine Aufgabe "Herausforderung 1" zuweisen.
+
+4. Erstellt auf der Repository-Seite eine Projekttafel (verwendet nicht die Option in der Beta-Phase), indem ihr die Vorlage "Automatisiertes Kanban" verwendet. Sobald das Projekt erstellt ist, sollten einige Karten in der "To do"-Spalte erstellt werden - erledigt die erstellten Karten.
+   - Erstellt eine "Erledigt"-Spalte unter Verwendung des voreingestellten Vorschlags
+   - Verknüpft die erstellten Aufgaben mit der gerade erstellten Projekttafel
+   - Archiviert die Karten (aber nicht die Aufgaben)
+
+5. Überprüft eur Project Board und stellt sicher, dass eure Aufgaben automatisch in der Spalte "Zu erledigen" erscheinen.
+
+6. Da ihr gerade an Herausforderung 1 arbeitet, zieht die das Issue `Challenge 1` von der Spalte "To do" auf "In Progress".
+
+7. Bitte eines deiner Teammitglieder, das von dir zugewiesene Problem `Challenge 1` zu schließen. Überprüft euer Board, um zu sehen, ob das Problem automatisch in die Spalte "Done" verschoben wurde. 
+
+8. Für die nächsten Herausforderungen könnt ihr das Board gerne nutzen, um z.B. Aufgaben in eurem Team zu verwalten.
    
-3. Log dich ein im [Azure Portal](http://portal.azure.com), um zu schauen ob du Zugriff auf die Suscription hast. Das ist deine Umgebung in der Cloud die du nutzen kannst für die Aufgaben. Schau dir folgenden Link an um die grundlegenden Navigation im Portal zu verstehen: [Azure Portal Navigation](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-overview#getting-around-the-portal)
-
-4. Zusätzlich musst du einen Git-Client installieren. Zwei der beliebtesten Möglichkeiten, mit GitHub zu arbeiten, sind das Git-Befehlszeilentool (Git CLI) und GitHub Desktop (du brauchst nur eines):
-    - Wenn du mit Kommandozeilen vertraut bist und Git SCM ausprobieren möchtest, befolge die Anweisungen zum [Herunterladen und Installieren](https://git-scm.com/downloads). 
-    - Wenn du eine GUI-basierte Erfahrung bevorzugst, lade GitHub Desktop [hier](https://desktop.github.com/) herunter und installiere es.
-    - Wenn das dein erstes mal mit Git ist, solltest du noch folgende [erste Schritte](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) durchführen
-    ```
-        git config --global user.name "Dein Name"
-        git config --global user.email deine.email@adresse.com
-        git config --global init.defaultBranch main
-    ```
-
-5. Zu guter Letzt benötigst du noch eine IDE oder einen Texteditor um die Challenges abzuschließen. Du kannst gerne vorinstallierte Anwendung wie TextEdit oder Notepad nutzen, wir empfehlen jedoch Entwicklungstools wie [Visual Studio Code](https://code.visualstudio.com/). Folge dem Link und Installiere VS-Code oder nutze einen Editor deiner Wahl!
-
 ### Checklist
 
-- Du solltest dich in GitHub und Azure mit deinen entsprechenden Accounts anmelden können.
-- Du solltest deinen bevorzugten Git-Client installiert haben.
-- Du solltest eine IDE (oder einen Texteditor) installiert haben. 
+- hr habt einen oder mehrere Mitwirkende (Collaborators) zu Ihrem Repo hinzugefügt
+- Ihr habt ein Project Board mit der Kanban-Vorlage für die Automatisierung mit Aufgaben
+- Neue Issues/Aufgaben, die einem Projekt zugewiesen werden, erscheinen automatisch in der Spalte "To do".
+- Geschlossene Issues/Aufgaben erscheinen automatisch in der Spalte "Done".
 
-### Learnmaterial
+### Lernmaterial
 
-- Anleitung um [Git zu installieren](https://github.com/git-guides/install-git)
-- Neben GitHub Desktop gibt es noch weitere benutzeroberflächenbasierte Git-Clients. Gerne kannst du dir diese auch [hier](https://git-scm.com/downloads/guis) ansehen. 
-- [Was ist DevOps?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops)
-- [Was ist GitHub?](https://guides.github.com/activities/hello-world/)
-- [GitHub Learning Lab](https://lab.github.com/)
+- [Organizations in Github](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations)
+- [Creating a project board in GitHub](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-a-project-board)
+- [Enable GitHub Issues on a repo](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/disabling-issues)
+- [Inviting collaborators to a personal repository](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
+- [Learn more about automation with project boards](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/configuring-automation-for-project-boards)
+- [Adding issues to a project board](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
 
 
 
-[Home](../../README.md) - [Next >](../challenge01/README.md)
+[Home](../../README.md) - [Next >](../challenge02/README.md)
